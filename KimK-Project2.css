@@ -1,0 +1,83 @@
+body {
+  padding: 10px 10px;
+  font-family: Tahoma;
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+h1 {
+  text-align: left;
+  color: #294860;
+}
+
+h2 {
+  text-align: left;
+  color: #294860;
+}
+
+h4 {
+  text-align: left;
+  color: #294860;
+}
+
+h5 {
+  text-align: left;
+  color: #294860;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 15px;
+}
+
+li {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+dl {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.lesson {
+  background-color: #294860;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.concept {
+  background-color: #DFEAF1;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+  color: black;
+}
+
+.concept-title {
+  font-size: 28px;
+  margin: 8px;
+  text-align: left;
+  color: #294860;
+}
+
+.concept-description {
+  font-weight: normal;
+  margin: 6px;
+}
+
+.code {
+  font-family: Courier;
+  color: black;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-right: 4px;
+}

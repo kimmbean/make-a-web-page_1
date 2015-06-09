@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"/>
+  <title>Kim's Notes</title>
+  <link rel="stylesheet" href="KimK-Project2.css">
+</head>
+
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href=#lesson-1>Lesson 1: Basics of the Web</a>
+        <ul>
+          <li><a href="#lesson-1-1">The World Wide Web</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3">Tags</a></li>
+          <li><a href="#lesson-1-4">Inline or Block Elements</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Basics of Learning to Code</a>
+        <ul>
+          <li><a href="#lesson-2-1">How Learning to Code Works</a></li>
+          <li><a href="#lesson-2-2">How the Web Works and HTML's Structure</a></li>
+          <li><a href="#lesson-2-3">How Web Browser's "Read" Code</a></li>
+          <li><a href="#lesson-2-4">HTML, CSS and DOM</a></li>
+          <li><a href="#lesson-2-5">Developer Tool Options and Applicability</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Applying CSS to Create Visual Structure in HTML</a>
+        <ul>
+          <li><a href="#lesson-3-1">What is CSS?</a></li>
+          <li><a href="#lesson-3-2">How does CSS work?</a></li>
+          <li><a href="#lesson-3-3">Using CSS with Web Pages</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div>
+    <h2>Important Concepts</h2>
+    <div class="lesson">
+      <h3 id="lesson-1">Lesson 1: Basics of the Web</h3>
+      <div class="concept" id="lesson-1-1">
+        <div class="concept-description">
+          <p><b>The World Wide Web (WWW)</b> is a collection of HTML docs (HTML = hyper text markup language), that glue everything together through the use of links (hyper links), thus creating the web. Invented in the early 90s, there are now 30+ billion
+            pages.
+          </p>
+
+          <p>Several major "pieces" of the web are inter-related and work together, including You :), a computer running a browser, the internet, and servers. The internet and servers talk to each other through http.</p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-2">
+        <div class="concept-description">
+          <b>HTML</b> is short for <u>h</u>yper <u>t</u>ext
+          <p><u>m</u>arkup <u>l</u>anguage, which is made up of... text content - what you can see; markup - what it looks like; references to other docs or files with associated attributes (images/videos, etc.), and links to other pages.</p>
+          <p><b>HTML markup</b> is made of <u><b>tags</b></u>. There is an opening tag, followed by content, and then a closing tag. Each tag is named by a tag description within brackets. An entire tag is called an <u><b>element</b></u>. <b>HTML attributes</b>            are <i>tag</i> attributes that ascribe a value, and tags can have multiple values. An example of an <u><b>attribute</b></u> assigned to a tag is an anchor. <u><b>Anchors</b></u> are for making links, like assigning a URL as an attribute to
+            piece of content.</p>
+          <p>There is specific nomenclature associated with defining an <b>HTML Document</b>. Doctype specifies the type of document at the beginning, followed by the opening doc tag, like html. This indicates the beginning of the document. After this identification,
+            attributes like head, title, etc., are included and this is where CSS guidelines would be defined. After the head and title tags, the body of the document is coded.</p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-3">
+        <div class="concept-description">
+          <p><b>Image tags</b> don't have a closing tag and are called a void tag if they don't have a closing tag, because these kinds of tag have no content. Good web coding citizenry occurs when coders assign alternate text to display when an image doesn't
+            load, even though doing so isn't required. It's also important to remember that all line spaces must be defined, forcing breaks through the use of tags.</p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-4">
+        <div class="concept-description">
+          <p><b>Inline or block tags</b> are used to simply end a line of text, and are void tags like line break = br. Block tags make an invisible box for the text, and these can be assigned height and width. Span is an example of an inline tag that represents
+            text, and div is an example of a block tag that behaves like a paragraph tag and creates a box around the tagged section.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson">
+      <h3 id="lesson-2">Lesson 2 - Basics of Learning to Code</h3>
+      <div class="concept" id="lesson-2-1">
+        <h4>How Learning to Code Works</h4>
+        <div class="concept-description">
+          <p>Whenever we learn anything, we begin as novices. Learning is a continuum of moving from being novices to becoming experts. The goal of this course is for learners to <i>gain ability</i> in most fundamental programming concepts, and <i>awareness</i>            of many concepts beyond this class.</p>
+
+          <p>As learners, we go through stages of expertise, including...</p>
+          <ul>
+            <li><b>Ignorance</b> - In this stage, a novice could feel like they lack any awareness or understanding of the topic, but this is where every journey to master begins.</li>
+            <li><b>Awareness</b> - Learners can move quickly from Ignorance to Awareness.</li>
+            <li><b>Ability</b> - It takes a little more time to reach ability, but it is at this stage that learners begin to use their newfound, possibly still rudimentary, skills.</li>
+            <li><b>Fluency</b> - It takes the longest amount of time to reach ths level, but it is here that learners have reached expert status.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-2">
+        <h4>How the Web Works/How HTML is Structured</h4>
+        <div class="concept-description">
+          <p>Front-end web development is visual. You get to <b>SEE</b> what you develop in a browser as you create it, so there's immediate gratification and early rewards. Yay! :) HTML, CSS, and Java script have different purposes when developing a web
+            page. Each purpose is related to how you break down a visual design to create a web page:</p>
+          <ul>
+            <li><b>Structure</b> - HTML is like the structure of a house</li>
+            <li><b>Design</b> - CSS is like decorating the house... the wall color, artwork, architectural details, etc.</li>
+            <li><b>Modification</b> - Java script is like any changes you make to the house, like when a garage door opener changes the structure of the house by opening the garage door</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-3">
+        <h4>But wait, how does the browser read this?</h4>
+        <div class="concept-description">
+          <p> Code has a <u>tree-like structure</u>. Instructions for the browser are found in HTML's tree-like structure. While HTML and CSS are both languages, HTML controls the <i>structure</i> of the web page while CSS controls the <i>style</i> of the
+            page (how it looks). When a programmer talkes about the <u>DOM (Document Object Model)</u>, they are talking about the tree-like structure of the page - which is how the browser understands the page.
+          </p>
+          <p>There are <i>shared attributes</i> as well as <i>differences</i> across HTML, CSS and DOMs. HTML has language, syntax and rules; as does CSS. HTML uses tags to describe content, which can be empty or contain another element, and tags can ascribe
+            attributes and values in addition to describing content. The tree-like structure of HTML provides the structure and content of the page from the outermost variable to the innermost.</p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-4">
+        <h4>HTML, CSS, and Dom</h4>
+        <div class="concept-description">
+          <p>Similar to HTML, CSS also has language, syntax and rules, but uses it's language to designate the <b><i>style aspects</i></b> of the page - i.e., what style to use and where to get it. Unlike HTML and CSS, DOM doesn't get down to the level of
+            describing the content or style of the page, but is instead the standard convention for interacting in HTML and describes the elements in the tree.</p>
+          <ul style="list-style-type:none">
+            <li><b>HTML</b> - Hypertext Markup Language </li>
+            <li><b>CSS</b> - Cascading Style Sheet; style sheet language used for describing the look and formatting of a document written in a markup language</li>
+            <li><b>DOM</b> - Document Object Model; a cross-platform and language independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of each document are organized in a tree structure, called
+              a DOM tree.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-5">
+        <h4>Developer Tool Options and Applicability</h4>
+        <div class="concept-description">
+          <ol>
+            <li><b>Scratchpad</b>
+              <ul>
+                <li>most beginner friendly</li>
+                <li> speed of feedback: immediate feedback</li>
+                <li> ease of use: great for beginners</li>
+                <li> ease of sharing: impossible</li>
+                <li> power/professionalism: low</li>
+                <li> number of languages: 2 - HTML and CSS</li>
+              </ul>
+            </li>
+
+            <li><b>Codepen</b>
+              <ul>
+                <li>speed of feedback: 2-3 seconds</li>
+                <li>ease of use: fewer beginner friendly features</li>
+                <li>ease of sharing: easy, but requires an account</li>
+                <li>power/professionalism: very high</li>
+                <li>number of languages: 3 - HTML, CSS, JavaScript</li>
+              </ul>
+            </li>
+
+            <li><b>Sublime</b>
+              <ul>
+                <li>speed of feedback: on page refresh</li>
+                <li>ease of use: difficult in beginning</li>
+                <li>ease of sharing: difficult</li>
+                <li>power/professionalism: highest</li>
+                <li>number of languages: all * the languages</li>
+              </ul>
+            </li>
+          </ol>
+          <p>Note: For now, it's best to start by writing your code in scratchpad and write CSS inside of an element in <u>Scratchpad</u>. Then if you want to share your code, use <u>Codepen</u>. Later, we'll use <u>Sublime</u> to write code that we'll saveand
+            write on our computer.</p>
+
+          <p><i>How do I share code i've written in Codepen for free?</i></p>
+          <p>Sign up for the free codepen account, and click "create a new pen", enter your code. Then, in editor, you can pick full page option, which creates a URL that you can copy and paste and share with anyone!</p>
+
+          <p><i>How do I open code I've written in Sublime in a web browser?</i></p>
+          <p>There's a tiny icon at the top of the window that you can drag and drop into the browser address bar. When you drop it there, your web site will display.</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="lesson">
+        <h3 id="lesson-3">Lesson 3: Applying CSS to Create Visual Structure in HTML</h3>
+        <div class="concept" id="lesson-3-1">
+          <div class="concept description">
+            <p>CSS stands for <b>Cascading Style Sheets</b>. It provides a framework to apply <i>style</i> to elements within HTML code and bring design to the raw structure of an HTML document.</p>
+
+            <p>The application of CSS to an HTML document is like the way we handle governance within the US model. Laws, or governance, is provided at many levels - national, state, municipality... you even have "rules" within your home. Each type of governance
+              determines a different level of "rule." Similar to how nesting dolls stack within each other, the same concept of the variable structure of laws/governance from the most local (home) to the highest (federal), CSS is applied using a concept
+              called
+              <b>Inheritance</b>. In CSS, inheritance means the most local "rule" wins. For example - if we applied CSS to our laws in the US, our house rules would run the country! Another way of thinking about this is that the most specific rule in
+              CSS applies to each element. You keep "cascading" through the rules until you find the one that applies most specifically to a given element.</p>
+          </div>
+        </div>
+        <div class="concept" id="lesson-3-2">
+          <h4>How does CSS "control" HTML?</h4>
+          <div class="concept description">
+            <p>CSS is code written to tell HTML code how it should look, or represent, on a web page. It does this by specifying color, size, and other <b>attributes</b> of each element. Further differentiation among elements can be applies using CSS <b>classes</b>.</p>
+            <p>CSS is the application of a concept in software engineering called "don't repeat yourself", or DRY. This concept is aimed at reducing repitition of information of all kinds and states that "Every piece of knowledge must have a single, unabmiguous, authoritative representation within a system." When applied successfully, this principle allows single elements within a system (or body of code) to be changed without impact to other logically unrelated elements. Likewise, defining the style for elements that are logically related - like the definitions for style in a CSS file that dictate visual representation for similar classes of elements - makes sure that a single update to the specificaion in the CSS file will result in all logically related elements staying in sync and updating accordingly. The coder makes a single change, and the entire body of HTML code will reflect the change uniformly. This makes for efficient code and avoids repetition.</P>
+          </div>
+        </div>
+        <div class="concept" id="lesson-3-3">
+          <h4>Using CSS with Web Pages</h4>
+          <div class="concept description">
+            <p>There are three ways to incorporate style into HTML documents using CSS. First, you can <i>write CSS into the head tag</i>. This option would work for small documents, with minimal styling required. A second option is to <i>write your CSS inline</i>.
+              Adding CSS inline means you would literally code style attributes for every individual HTML element. This is generally considered the least favorable approach as it leads to lots of repeated code - not very efficient, and not a cool coder's
+              best practice. :( While the third option - <i>using external CSS files</i> - adds a step to your coding process, it's actually a more efficient practice for larger HTML projects. Using an externall CSS file involves writing a CSS file with
+              all of the element attributes defined, then linking your HTML doc to said CSS file via a link in the head tag of the HTML doc.</p>
+
+            <p>In addition to CSS element styles, box sizing and positioning are important to the overall look and feel of a web page. HTML elements are essentially boxes, with each box having 4 components. It's difficult to get a box size just right because
+              there are so many components, so you'll want to use a couple of special techniques to address this.</p>
+            <h5>Box Sizing</h5>
+            <p>One option is to set box sizes in percentages instead of pixels. This is a great set up for responsive design, as the web page will automatically adjust the sizes of your boxes as you scale your page down or up.</p>
+            <p>Another option is to set the box-sizing attribute to border-box for every element. This will provide a consistent sizing that includes the main aspet of the box you are sizing, rather than having to size each component separately.</p>
+            <h5>Box Positioning</h5>
+            <p>While Divs are block elements (as opposed to inline), they don't have parameters to set their size across a page. By default, they display across an entire page's width. You can add the rule <i>display: flex</i> to override this default behavior
+              and allow Divs to display side-by-side on a page.</p>
+            <h5>Last but not least...</h5>
+            <p>To make it even more interesting, surprise! Different browsers react slightly differently to CSS and HTML, so browsers may display the same code differently. You will want to add descriptors for each browser (webkit, moz, ms) in CSS so each
+              browser will have the info it needs to read your code and display accurately.</p>
+          </div>
+        </div> 
+      </div>
+  </div>
+</body>
